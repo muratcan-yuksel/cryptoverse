@@ -3,7 +3,7 @@ import millify from "millify";
 import { Typography, Row, Col, Statistic } from "antd";
 import { Link } from "react-router-dom";
 
-// import { useGetCryptosQuery } from "../services/cryptoApi";
+import { useGetCryptosQuery } from "../services/cryptoApi";
 // import Cryptocurrencies from "./Cryptocurrencies";
 // import News from "./News";
 // import Loader from "./Loader";
@@ -11,6 +11,8 @@ import { Link } from "react-router-dom";
 const { Title } = Typography;
 
 const Homepage = () => {
+  const { data, isFetching } = useGetCryptosQuery();
+  console.log(data);
   return (
     <>
       <Title level={2} className="heading">
