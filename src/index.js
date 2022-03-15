@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
+import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 
 ReactDOM.render(
   <React.StrictMode>
