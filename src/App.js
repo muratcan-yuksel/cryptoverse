@@ -31,8 +31,23 @@ const App = () => {
             </Routes>
           </div>
         </Layout>
+        <div className="footer">
+          <Typography.Title
+            level={5}
+            style={{ color: "white", textAlign: "center" }}
+          >
+            Made by Murat Can Yüksel in a bar, thanks to Javascript Mastery{" "}
+            <br />
+            <Link to="/">Cryptoverse Inc.</Link> <br />
+            All Rights Reserved.
+          </Typography.Title>
+          <Space>
+            <Link to="/">Home</Link>
+            <Link to="/exchanges">Exchanges</Link>
+            <Link to="/news">News</Link>
+          </Space>
+        </div>
       </div>
-      <div className="footer"></div>
     </div>
   );
 };
